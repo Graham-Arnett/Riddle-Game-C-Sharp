@@ -17,7 +17,9 @@ namespace RiddleGameApp
 
             foreach (string question in questions) 
             {
-                Console.WriteLine(question);
+                Console.Write(question);
+                Console.ReadLine();
+                Console.WriteLine("Correct!");
             }
         }
     }
