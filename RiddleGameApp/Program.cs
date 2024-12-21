@@ -19,22 +19,39 @@ namespace RiddleGameApp
             do
             {
                 int score = 0;
-                foreach (string question in questions)
+                //foreach (string question in questions)
+                //{
+                //    Console.Write(question);
+                //    string answer = Console.ReadLine().ToLower().Trim();
+                //    if (answers.Contains(answer))
+                //    {
+                //        Console.WriteLine("Correct!");
+                //        score++;
+                //    }
+                //    else
+                //    {
+                //        Console.WriteLine("That was WRONG!");
+                //    }
+                //}
+                for (int i = 0; i < questions.Length; i++)
                 {
-                    Console.Write(question);
-                    string answer = Console.ReadLine();
-                    if (answers.Contains(answer))
+                    Console.Write(questions[i]);
+
+                   
+                    string userAnswer = Console.ReadLine().Trim().ToLower();
+
+                    if (userAnswer == answers[i].ToLower())
                     {
-                        Console.WriteLine("Correct!");
+                        Console.WriteLine("You are CORRECT!");
                         score++;
                     }
                     else
                     {
-                        Console.WriteLine("That was WRONG!");
+                        Console.WriteLine("You are WRONG!");
                     }
                 }
                 Console.WriteLine($"You ended up with a score of: {score}");
-                Console.WriteLine("Would you like to try again? (y/n): ");
+                Console.Write("\nWould you like to try again? (y/n): ");
                 choice = Console.ReadLine().ToLower();
             } while (choice == "y");
         }
