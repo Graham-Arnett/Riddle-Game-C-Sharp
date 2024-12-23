@@ -13,26 +13,12 @@ namespace RiddleGameApp
             string choice;
             
             string[] questions = new string[]{"When you say my name I cease to exist: ", "Poor men have me but rich men don't: ","I have a face and a tail, but no body: "};
-            //I might make a class or a method for the questions and the answer key but this is the general idea, though I think I'll save that for the advanced version
-            //answers array has riddle answers, maybe we check if its right by if the index positions match?
+          
             string[] answers = new string[] {"silence", "nothing","coin"};
             do
             {
                 int score = 0;
-                //foreach (string question in questions)
-                //{
-                //    Console.Write(question);
-                //    string answer = Console.ReadLine().ToLower().Trim();
-                //    if (answers.Contains(answer))
-                //    {
-                //        Console.WriteLine("Correct!");
-                //        score++;
-                //    }
-                //    else
-                //    {
-                //        Console.WriteLine("That was WRONG!");
-                //    }
-                //}
+         
                 for (int i = 0; i < questions.Length; i++)
                 {
                     Console.Write(questions[i]);
