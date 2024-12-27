@@ -12,9 +12,9 @@ namespace RiddleGameApp
                 "You have 3 tries per question, if you fail or get through you will be told what your score was at the end. Note all answers are a single word.");
             string choice;
             
-            string[] questions = new string[]{"When you say my name I cease to exist: ", "Poor men have me but rich men don't: ","I have a face and a tail, but no body: "};
+            string[] questions = new string[]{"When you say my name I cease to exist: ", "Poor men have me but rich men don't: ","I have a face and a tail, but no body: ", "I am made of neither flesh nor bone. I have no arms, but I have fingers and thumbs of my own: "};
           
-            string[] answers = new string[] {"silence", "nothing","coin"};
+            string[] answers = new string[] {"silence", "nothing","coin", "glove"};
             do
             {
                 int score = 0;
