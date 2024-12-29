@@ -9,12 +9,14 @@ namespace RiddleGameApp
         {
             Console.WriteLine("Welcome to my riddle game app!\n" +
                 "You'll be asked a random question, and have to give the word you think is the answer.\n" +
-                "You have 3 tries per question, if you fail or get through you will be told what your score was at the end. Note all answers are a single word.");
+                "You have 3 tries per question, if you fail or get through you will be told what your score was at the end. Note all answers are a single word. If you want a hint, say hint when prompted for an answer.");
             string choice;
             
             string[] questions = new string[]{"When you say my name I cease to exist: ", "Poor men have me but rich men don't: ","I have a face and a tail, but no body: ", "I am made of neither flesh nor bone. I have no arms, but I have fingers and thumbs of my own: "};
           
             string[] answers = new string[] {"silence", "nothing","coin", "glove"};
+
+            string[] hints = new string[] {"The absence of volume", "The opposite of everything", "A clothing item that you wear during the winter"};
             do
             {
                 int score = 0;
@@ -30,6 +32,10 @@ namespace RiddleGameApp
                     {
                         Console.WriteLine("You are CORRECT!");
                         score++;
+                    }
+                    else if (userAnswer == "hint") 
+                    {
+                        Console.WriteLine(hints[i]);
                     }
                     else
                     {
