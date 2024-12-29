@@ -16,7 +16,7 @@ namespace RiddleGameApp
           
             string[] answers = new string[] {"silence", "nothing","coin", "glove"};
 
-            string[] hints = new string[] {"The absence of volume", "The opposite of everything", "A clothing item that you wear during the winter"};
+            string[] hints = new string[] {"The absence of volume", "The opposite of everything", "A currency made of metal","A clothing item that you wear during the winter"};
             do
             {
                 int score = 0;
@@ -28,14 +28,15 @@ namespace RiddleGameApp
                    
                     string userAnswer = Console.ReadLine().Trim().ToLower();
 
-                    if (userAnswer == answers[i].ToLower())
+                    if (userAnswer == "hint")
+                    {
+                        Console.WriteLine(hints[i]);
+                    }
+                        
+                    else if (userAnswer == answers[i].ToLower())
                     {
                         Console.WriteLine("You are CORRECT!");
                         score++;
-                    }
-                    else if (userAnswer == "hint") 
-                    {
-                        Console.WriteLine(hints[i]);
                     }
                     else
                     {
