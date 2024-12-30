@@ -31,6 +31,7 @@ namespace RiddleGameApp
                     if (userAnswer == "hint")
                     {
                         Console.WriteLine(hints[i]);
+                        i--;
                     }
                         
                     else if (userAnswer == answers[i].ToLower())
