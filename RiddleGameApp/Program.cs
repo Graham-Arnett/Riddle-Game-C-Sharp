@@ -20,6 +20,7 @@ namespace RiddleGameApp
             do
             {
                 int score = 0;
+                int hintUse = 0;
          
                 for (int i = 0; i < questions.Length; i++)
                 {
@@ -31,6 +32,7 @@ namespace RiddleGameApp
                     if (userAnswer == "hint")
                     {
                         Console.WriteLine(hints[i]);
+                        hintUse++;
                         i--;
                     }
                         
@@ -44,7 +46,19 @@ namespace RiddleGameApp
                         Console.WriteLine("You are WRONG!");
                     }
                 }
-                Console.WriteLine($"You ended up with a score of: {score}");
+                Console.WriteLine($"You ended up with a score of: {score}!");
+                if (hintUse == 0)
+                {
+                    Console.WriteLine("Woah! You're a real super sleuth!");
+                }
+                else if (hintUse == 1) 
+                {
+                    Console.WriteLine("Not bad, but you could do better!");
+                }
+                else 
+                {
+                    Console.WriteLine("Riddles might not be your strong suit.");
+                }
                 Console.Write("\nWould you like to try again? (y/n): ");
                 choice = Console.ReadLine().ToLower();
             } while (choice == "y");
