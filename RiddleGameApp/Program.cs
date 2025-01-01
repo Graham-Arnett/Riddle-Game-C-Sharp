@@ -47,11 +47,11 @@ namespace RiddleGameApp
                     }
                 }
                 Console.WriteLine($"You ended up with a score of: {score}!");
-                if (hintUse == 0)
+                if (hintUse == 0 && score == 4)
                 {
                     Console.WriteLine("Woah! You're a real super sleuth!");
                 }
-                else if (hintUse == 1) 
+                else if (hintUse == 1 || score == 3) 
                 {
                     Console.WriteLine("Not bad, but you could do better!");
                 }
