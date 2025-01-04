@@ -51,6 +51,7 @@ namespace RiddleGameApp
                 {
                     Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("Woah! You're a real super sleuth!");
+                    Console.ForegroundColor= ConsoleColor.White;
                 }
                 else if (hintUse == 1 || score == 3) 
                 {
