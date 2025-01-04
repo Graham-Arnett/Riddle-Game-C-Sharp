@@ -49,7 +49,7 @@ namespace RiddleGameApp
                 Console.WriteLine($"You ended up with a score of: {score}!");
                 if (hintUse == 0 && score == 4)
                 {
-                    Console.BackgroundColor = ConsoleColor.Green;
+                    Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("Woah! You're a real super sleuth!");
                 }
                 else if (hintUse == 1 || score == 3) 
