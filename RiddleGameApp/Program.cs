@@ -16,7 +16,7 @@ namespace RiddleGameApp
           
             string[] answers = new string[] {"silence", "nothing","coin", "glove"};
 
-            string[] hints = new string[] {"Very quiet", "The opposite of everything", "A currency made of metal","A clothing item that you wear during the winter"};
+            string[] hints = new string[] {"Very quiet", "The opposite of everything", "A currency made of metal","A clothing item that you wear over your hands"};
             do
             {
                 int score = 0;
